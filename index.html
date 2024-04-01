@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes Project</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        background: linear-gradient(
+          112.1deg,
+          rgb(32, 38, 57) 11.4%,
+          rgb(63, 76, 119) 70.2%
+        );
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 15px 60px;
+      }
+      h1 {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 35px;
+        font-weight: 550;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 20px 15px;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+      }
+      img {
+        display: block;
+        margin: auto;
+      }
+      p {
+        line-height: 1.5;
+        color: white;
+        font-size: 20px;
+      }
+      .terms {
+        font-style: italic;
+      }
+      .link {
+        color: white;
+        font-size: 16px;
+      }
+      link:hover {
+        cursor: pointer;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: rgb(15, 15, 15);
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        margin-top: 20px;
+        border: black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(78, 77, 77, 0.4);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background-color: grey;
+        color: black;
+        cursor: pointer;
+      }
+    </style>
+    <div class="container">
+      <h1>I love Icecream</h1>
+      <h2>Especially Vanilla Icecream</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/098/original/icecream.jpg?1708434230"
+        alt="Vanilla Icecream"
+      />
+      <hr />
+      <p>
+        <strong>Vanilla </strong> is frequently used to flavor ice cream,
+        especially in North America, Asia, and Europe. Vanilla ice cream, like
+        other flavors of ice cream, was originally created by cooling a mixture
+        made of cream, sugar, and vanilla above a container of ice and salt. The
+        type of vanilla used to flavor ice cream varies by location. In North
+        America and Europe consumers are interested in a more prominent, smoky
+        flavor, while in Ireland, a more anise-like flavor is desired. To create
+        the smooth consistency of ice cream, the mixture has to be stirred
+        occasionally and then returned to the container of ice and salt to
+        continue the solidification process. According to Iced: 180 Very Cool
+        Concoctions, many people often consider vanilla to be the
+        <span class="terms">"default" or "plain"</span> flavor of ice cream.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Vanilla_ice_cream"
+        target="_blank"
+        class="link"
+        >Read on Wikipedia</a
+      >
+      <br />
+      <button>Try Vanilla Icecream</button>
+      <script>
+        function buyButton() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+          if (name.length)
+            alert(
+              "Thanks, " +
+                name +
+                " " +
+                "we will be in touch. Meanwhile have a lot of Icecream!🍨"
+            );
+          else {
+            alert("No name, No Vanilla Icecream for you🙁");
+          }
+        }
+
+        let bButton = document.querySelector("Button");
+        bButton.addEventListener("click", buyButton);
+      </script>
+    </div>
+  </body>
+</html>
